@@ -1,17 +1,14 @@
-const Numeros = document.getElementsByClassName("teclas");
-const operador = document.getElementsByClassName("signos");
-let varr = document.getElementsByClassName("form-control");
-let res = 0;
-function numero(n) {
-    if (Numeros) {
-        document.getElementsByClassName("form-control").value += n;
-    } 
+const n = document.getElementsByClassName('teclas');
+function num(n) {
+  if (n) {
+    document.getElementsByClassName("form-control").inertext += "1";
+  }
 }
-function simbolos (o) {
-    let value = aux.value;
-    if (value.endsWith("+") || value.endsWith("-") || value.endsWith("*") || value.endsWith("/")) {
-    return;
 
-    }
-    varr.value += o;
+const s = document.getElementsByClassName('signos');
+function sig(s) {
+  if (s) {
+    document.getElementsByClassName("form-control").value += n;
+    console.log("hola");
+  }
 }
